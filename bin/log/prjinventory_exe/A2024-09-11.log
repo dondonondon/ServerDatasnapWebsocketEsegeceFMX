@@ -1,0 +1,10 @@
+prjInventory.exe: 00006394: 18.09.01 []:>--------------------------------------------------------------<
+prjInventory.exe: 00006394: 18.09.01 [TUniServerModule]:Server First Init.
+prjInventory.exe: 00006394: 18.09.01 [TUniServerModule]:Start Path = D:\Job\Project\Github\ServerDatasnapWebsocketEsegeceFMX\bin\
+prjInventory.exe: 00006394: 18.09.01 [TUniServerModule]:Starting HTTP Server on Port: 8078...
+prjInventory.exe: 00006394: 18.09.01 [TUniServerModule]:HTTP Server Started on Port: 8078
+prjInventory.exe: 0000628C: 18.09.10 [127.0.0.1]:EClassNotFound : Class TServerControlPanelForm not found : Addr: $00EF413A
+prjInventory.exe: 0000628C: 18.09.10 [HandleFileRequest[127.0.0.1]]:File not found: D:\Job\Project\Github\ServerDatasnapWebsocketEsegeceFMX\bin\favicon.ico
+prjInventory.exe: 00005440: 18.09.15 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\unipackages-7.5.1\themes\ext-theme-uni_windows11_triton\resources\fonts\OpenSans-Bold.ttf
+prjInventory.exe: 00006228: 18.09.15 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\unipackages-7.5.1\themes\ext-theme-uni_windows11_triton\resources\fonts\OpenSans-Regular.ttf
+prjInventory.exe: 00005BF4: 18.09.15 [HandleFileRequest[127.0.0.1]]:File not found: C:\Program Files (x86)\FMSoft\Framework\unigui\unipackages-7.5.1\themes\ext-theme-uni_windows11_triton\resources\fonts\OpenSans-Light.ttf
