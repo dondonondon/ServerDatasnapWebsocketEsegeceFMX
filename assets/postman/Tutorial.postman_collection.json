@@ -1,0 +1,615 @@
+{
+	"info": {
+		"_postman_id": "25f47de6-b1a2-467d-a8c4-db1d7a21c5b1",
+		"name": "Tutorial",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12778306"
+	},
+	"item": [
+		{
+			"name": "RestAPI",
+			"item": [
+				{
+					"name": "Hello World",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassSample/HelloWorld",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassSample",
+								"HelloWorld"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassCategory/GetData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassCategory/GetData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassCategory",
+								"GetData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassCategory/UpdateData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_id\": 16,\r\n    \"category_name\": \"update sample\",\r\n    \"description\": \"ini adalah description update\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassCategory/UpdateData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassCategory",
+								"UpdateData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassCategory/InsertData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_name\": \"insert sample\",\r\n    \"description\": \"ini adalah description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassCategory/InsertData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassCategory",
+								"InsertData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassStock/GetData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\": 1,\r\n    \"desc\": \"you can request withouot body json if you want fetch all data or use page = 0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassStock/GetData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassStock",
+								"GetData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassStock/GetStock",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_partner_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassStock/GetStock",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassStock",
+								"GetStock"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassProduct/GetData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassProduct/GetData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassProduct",
+								"GetData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassProduct/UpdateData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_id\": 1001,\r\n    \"category_id\": 16,\r\n    \"product_name\": \"Sempak beton\",\r\n    \"product_sku\": \"DC-BC-5115-N\",\r\n    \"description\": \"Semapk adalah barang langka\",\r\n    \"price\": 20.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassProduct/UpdateData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassProduct",
+								"UpdateData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassProduct/InsertData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_id\": 16,\r\n    \"product_name\": \"update sample product\",\r\n    \"product_sku\": \"DC-BC-5115-N\",\r\n    \"description\": \"ini adalah sample deskripsi product\",\r\n    \"price\": 20.5\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassProduct/InsertData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassProduct",
+								"InsertData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassTransaction/GetData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"page\": 1,\r\n    \"desc\": \"you can request withouot body json if you want fetch all data or use page = 0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassTransaction/GetData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassTransaction",
+								"GetData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassTransaction/InsertData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"origin_id\": \"1\",\r\n  \"destination_id\": \"415\",\r\n  \"invoice\": \"INV.2024.08.24.05.11.61\",\r\n  \"reference\": \"123456\",\r\n  \"date\": \"1724457600\",\r\n  \"description\": \"VGlkYWsgYWRhIGRlc2tyaXBzaSBkaXNpbmk=\",\r\n  \"data\": \"eyJkYXRhIjpbeyJzdG9ja19pZCI6MTIyLCJ1c2VyX3BhcnRuZXJfaWQiOjEsInByb2R1Y3RfaWQi\\r\\nOjQ0NSwicHJvZHVjdF9za3UiOiJDRC1FRC03NTgzLVgiLCJxdWFudGl0eSI6OTUwLCJjcmVhdGVk\\r\\nX2F0IjoiMjAwNC0wOC0yNCAxMzoxOTo0MyIsInVwZGF0ZWRfYXQiOiIyMDI0LTA4LTE4IDAzOjQ3\\r\\nOjA0IiwicHJvZHVjdF9uYW1lIjoia0NEIiwicHJvZHVjdF9za3VfbWFpbiI6IkFCLUNDLTk2NzUt\\r\\nSiIsImRlc2NyaXB0aW9uIjoiU1NIIHNlcnZlcyB0byBwcmV2ZW50IHN1Y2ggdnVsbmVyYWJpbGl0\\r\\naWVzIGFuZCBhbGxvd3MgeW91IHRvIGFjY2VzcyBhIHJlbW90ZSBzZXJ2ZXIncyBzaGVsbCB3aXRo\\r\\nb3V0IGNvbXByb21pc2luZyBzZWN1cml0eS4gSW1wb3J0IFdpemFyZCBhbGxvd3MgeW91IHRvIGlt\\r\\ncG9ydCBkYXRhIHRvIHRhYmxlc1wvY29sbGVjdGlvbnMgZnJvbSBDU1YsIFRYVCwgIiwiY2F0ZWdv\\r\\ncnlfbmFtZSI6IkhvdXNlaG9sZCAmIEtpdGNoZW4gQXBwbGlhbmNlcyIsInN0YXR1c19jaGVjayI6\\r\\nZmFsc2UsInF0eV9zZW5kIjoyNX0seyJzdG9ja19pZCI6MjUyOSwidXNlcl9wYXJ0bmVyX2lkIjox\\r\\nLCJwcm9kdWN0X2lkIjoyMiwicHJvZHVjdF9za3UiOiJDRS1CRi05ODc5LVYiLCJxdWFudGl0eSI6\\r\\nMTAwMCwiY3JlYXRlZF9hdCI6IjIwMDUtMTItMjEgMTI6MzE6NTQiLCJ1cGRhdGVkX2F0IjoiMjAy\\r\\nNC0wOC0xOCAwMDowNjozNiIsInByb2R1Y3RfbmFtZSI6ImlHYXJwdSIsInByb2R1Y3Rfc2t1X21h\\r\\naW4iOiJCQi1GRi02MTU1LUgiLCJkZXNjcmlwdGlvbiI6IkluIHRoZSBtaWRkbGUgb2Ygd2ludGVy\\r\\nIEkgYXQgbGFzdCBkaXNjb3ZlcmVkIHRoYXQgdGhlcmUgd2FzIGluIG1lIGFuIGludmluY2libGUg\\r\\nc3VtbWVyLiBTdWNjZXNzIGNvbnNpc3RzIG9mIGdvaW5nIGZyb20gZmFpbHVyZSB0byBmYWlsdXJl\\r\\nIHdpdGhvdXQgbG9zcyBvZiBlbnRodXNpYXNtLiIsImNhdGVnb3J5X25hbWUiOiJIZWFsdGggJiBC\\r\\nYWJ5IENhcmUiLCJzdGF0dXNfY2hlY2siOmZhbHNlLCJxdHlfc2VuZCI6NTV9LHsic3RvY2tfaWQi\\r\\nOjM4MiwidXNlcl9wYXJ0bmVyX2lkIjoxLCJwcm9kdWN0X2lkIjo4MzIsInByb2R1Y3Rfc2t1Ijoi\\r\\nQ0MtREEtNjY1Ny1UIiwicXVhbnRpdHkiOjQwOCwiY3JlYXRlZF9hdCI6IjIwMDMtMDUtMjMgMDY6\\r\\nNTc6NDUiLCJ1cGRhdGVkX2F0IjoiMjAyNC0wOC0xOCAwMzo0NzowNCIsInByb2R1Y3RfbmFtZSI6\\r\\nIlN0cmF3YmVycnkgcHJvIiwicHJvZHVjdF9za3VfbWFpbiI6IkZGLUFGLTU2OTYtTCIsImRlc2Ny\\r\\naXB0aW9uIjoiVG8gZ2V0IGEgc2VjdXJlIGNvbm5lY3Rpb24sIHRoZSBmaXJzdCB0aGluZyB5b3Ug\\r\\nbmVlZCB0byBkbyBpcyB0byBpbnN0YWxsIE9wZW5TU0wgTGlicmFyeSBhbmQgZG93bmxvYWQgRGF0\\r\\nYWJhc2UgU291cmNlLiBOYXZpY2F0IERhdGEgTW9kZWxlciBpcyBhIHBvd2VyZnVsIGFuZCBjb3N0\\r\\nLWVmZmVjdGl2ZSBkYXRhYmFzZSBkZXNpZ24gdG9vbCB3aGljaCAiLCJjYXRlZ29yeV9uYW1lIjoi\\r\\nQ2xvdGhpbmcsIFNob2VzIGFuZCBKZXdlbHJ5Iiwic3RhdHVzX2NoZWNrIjpmYWxzZSwicXR5X3Nl\\r\\nbmQiOjQwMH1dfQ==\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassTransaction/InsertData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassTransaction",
+								"InsertData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassUser/GetData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassUser/GetData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassUser",
+								"GetData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassUser/GetPartnerTypeData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassUser/GetPartnerTypeData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassUser",
+								"GetPartnerTypeData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassUser/UpdateData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_partner_id\": 2,\r\n    \"partner_name\": \"Saringan Tahu\",\r\n    \"contact_info\": \"saringantahu@gmail.com\",\r\n    \"partner_type_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassUser/UpdateData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassUser",
+								"UpdateData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ClassUser/InsertData",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "{{inv_keyname}}",
+								"value": "{{inv_keyvalue}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"partner_name\": \"Sarkilemper\",\r\n    \"contact_info\": \"Sarkilemper@gmail.com\",\r\n    \"partner_type_id\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{inv_base}}/ClassUser/InsertData",
+							"host": [
+								"{{inv_base}}"
+							],
+							"path": [
+								"ClassUser",
+								"InsertData"
+							],
+							"query": [
+								{
+									"key": "x-api-key",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
