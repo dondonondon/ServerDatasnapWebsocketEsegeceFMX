@@ -1,5 +1,3 @@
-# ServerDatasnapWebsocketEsegeceFMX
-
 # Server Datasnap Esegece Websocket
 
 Database : assets\database\inv_malay.sql
