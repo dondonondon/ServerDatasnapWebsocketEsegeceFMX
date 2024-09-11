@@ -9,7 +9,8 @@ API :
 5. Go to procedure RegisterClassAPI;
 5. Add your class here RegisterClasses([...,...,...,...,YourClass]);
 
-Note : if you have error when run prjInventory.exe, check folder bin/log/...
+# Config
+Open config.ini in bin\configapps\config.ini
 
 # UniGUI Apps If you want to try Apps (only EXE)
 
@@ -20,3 +21,5 @@ unipackage-7.5.1 : https://blangkon.net/ProjectShare/Ext/unipackages-7.5.1.rar
 ext-7.5.1.rar : https://blangkon.net/ProjectShare/Ext/ext-7.5.1.rar
 
 uni.rar : https://blangkon.net/ProjectShare/Ext/uni.rar
+
+Note : if you have error when run prjInventory.exe, check folder bin/log/...
